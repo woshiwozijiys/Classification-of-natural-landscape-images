@@ -18,9 +18,7 @@ model = vit_b_16(weights=None)
 model.heads.head = nn.Linear(model.heads.head.in_features, 6)
 
 state_dict = torch.load(
-    # "outputs/vit1_b_16_runs/vit1_epoch_3.pth",
-    # "outputs/vit2_b_16_runs/model_epoch_5.pth",
-    "outputs/vit3_b_16_runs/model_epoch_5.pth",
+    "best_model.pth",
     map_location=device,
 )
 model.load_state_dict(state_dict)
