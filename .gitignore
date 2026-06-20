@@ -2,3 +2,7 @@ data.zip
 best_model.pth
 *.pth
 *.zip
+.DS_Store
+.idea/
+__pycache__/
+*.py[cod]

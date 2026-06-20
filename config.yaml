@@ -9,7 +9,7 @@ weight_decay: 0.001
 
 augmentation: "randaugment"
 batch_size: 128
-epochs: 50git add .
+epochs: 50
 num_workers: 8
 
 save_dir: "./outputs/vit3_b_16_runs"
@@ -17,4 +17,3 @@ log_dir: "./logs/vit3_b_16_runs"
 
 test_model: "resnet50"
 test_checkpoint: "./outputs/resnet50_runs/model_epoch_6.0.pth"
-
