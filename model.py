@@ -10,7 +10,6 @@ from torchvision.models import vit_b_16
 
 device = torch.device("mps" if torch.mps.is_available() else "cpu")
 
-# --- load model once ---
 dataset = ImageFolder("./data/train")
 idx_to_class = {v: k for k, v in dataset.class_to_idx.items()}
 
